@@ -1,0 +1,104 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.all-artist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+.artist-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    border-radius: 16px;
+    padding: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.artist-item:hover {
+    transform: scale(1.05);
+    background-color: #1a1a1a;
+}
+
+.artist-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.artist-item:hover img {
+    transform: scale(1.1);
+}
+
+.name-artist {
+    text-align: center;
+}
+
+.artists-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Mixes For You section styles */
+.mixes-section {
+    margin: 30px 20px 60px;
+}
+
+.mixes-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.mixes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.mix-card {
+    background-color: #181818;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.mix-card img {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.mix-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mix-card:hover {
+    transform: scale(1.05);
+    background-color: #1db954;
+    color: #000;
+}

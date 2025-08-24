@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    margin: 20px 0 10px 30px;
+}
+
+header nav {
+    color: #1db954;
+}
+
+.play-song {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    margin: 5px 10px;
+    height: 53vh;
+    overflow: auto;
+}
+
+.play-song li {
+    list-style-type: none;
+    position: relative;
+    padding: 15px 0 5px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.play-song li:hover {
+    background-color: rgba(105, 105, 105, 0.15);
+    border-radius: 10px;
+}
+
+
+.play-song li span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c5362;
+}
+
+.play-song li img {
+    width: 48px;
+    height: 48px;
+    margin-left: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.play-song li h5 {
+    font-size: 11px;
+    margin-left: 15px;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.play-song li h5 .subtitle {
+    font-size: 9px;
+    color: #4c5362;
+}
+
+.play-song li h5 .fa-solid {
+    position: absolute;
+    right: 15px;
+}
+
+.song-item i {
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.song-item i:hover {
+    color: #1db954;
+    transform: scale(1.5);
+}
+
+.content {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    margin: 20px 10px 10px;
+    height: 35vh;
+    overflow: auto;
+    padding: 24px 15px;
+}
+
+.content h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 11px;
+    font-weight: 400;
+    color: #4c5362;
+    margin: 5px 0 15px;
+}
+
+
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #181818;
+    padding: 15px 20px;
+    border-top: 1px solid #333;
+    z-index: 100;
+}
+
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+.music_bar {
+    display: block;
+}
+
+.start-end {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #b3b3b3;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.item {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0 10px;
+    align-items: center;
+    outline: none;
+    gap: 10px;
+}
+
+.icon .fa-solid {
+    cursor: pointer;
+    outline: none;
+}
+
+.icon .shuffle {
+    font-size: 10px;
+    margin-right: 10px;
+    width: 17.5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.bar {
+    position: relative;
+    width: calc(100% - 10px);
+    height: 4px;
+    background-color: rgba(105, 105, 105, 0.3);
+    border-radius: 2px;
+    margin: 0 auto 10px auto;
+}
+
+.bar .bar2 {
+    position: absolute;
+    background-color: #36e2ec;
+    height: 100%;
+    width: 0%;
+    border-radius: 2px;
+}
+
+.bar .dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #36e2ec;
+    border-radius: 50%;
+    top: -4px;
+    left: 0%;
+    z-index: 2;
+}
+
+.bar .dot::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #36e2ec;
+    border-radius: 50%;
+    top: -2px;
+    left: -2px;
+    box-shadow: inset 0px 0px 3px #36e2ec;
+    z-index: -1;
+}
+
+.bar input {
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    left: 0;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+}
+
+.vol {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.vol i {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.vol-track {
+  position: relative;
+  width: 85px;
+  height: 4px;
+  background-color: rgba(105, 105, 105, 0.3);
+  border-radius: 2px;
+}
+
+.vol-bar {
+  position: absolute;
+  height: 100%;
+  width: 60%; /* default fill */
+  background-color: #36e2ec;
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.vol-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #36e2ec;
+  border-radius: 50%;
+  top: -4px;
+  left: 60%;
+  z-index: 2;
+}
+
+#vol {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 3;
+  cursor: pointer;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone - Pritam</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="./pritam.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h3>Music</h3>
+    </nav>
+  </header>
+
+  <div class="play-song">
+    <ul>
+      <li class="song-item">
+        <span>01</span>
+        <img src="./Pritam-song-photo/tum-se-hi-1.jpeg" />
+        <h5>
+          Tum Se Hi
+          <div class="subtitle">Pritam Chakraborty</div>
+        </h5>
+        <i class="fa-solid fa-play playListPlay" data-index="0"></i>
+      </li>
+      <li class="song-item">
+        <span>02</span>
+        <img src="./Pritam-song-photo/naach-meri-jaan-2.jpeg" />
+        <h5>
+          Naach Meri Jaan
+          <div class="subtitle">Pritam Chakraborty</div>
+        </h5>
+        <i class="fa-solid fa-play playListPlay" data-index="1"></i>
+      </li>
+      <li class="song-item">
+        <span>03</span>
+        <img src="./Pritam-song-photo/kesariya-3.jpeg" />
+        <h5>
+          Kesariya
+          <div class="subtitle">Pritam Chakraborty</div>
+        </h5>
+        <i class="fa-solid fa-play playListPlay" data-index="2"></i>
+      </li>
+      <li class="song-item">
+        <span>04</span>
+        <img src="./Pritam-song-photo/o-maahi-4.jpeg" />
+        <h5>
+          O Maahi
+          <div class="subtitle">Pritam Chakraborty</div>
+        </h5>
+        <i class="fa-solid fa-play playListPlay" data-index="3"></i>
+      </li>
+      <li class="song-item">
+        <span>05</span>
+        <img src="./Pritam-song-photo/tera-hoon-laga-hoon-5.jpeg" />
+        <h5>
+          Tera Hoon Laga Hoon
+          <div class="subtitle">Pritam Chakraborty</div>
+        </h5>
+        <i class="fa-solid fa-play playListPlay" data-index="4"></i>
+      </li>
+      <li class="song-item">
+        <span>06</span>
+        <img src="./Pritam-song-photo/tum-kya-mila-6.jpeg" />
+        <h5>
+          Tum Kya Mile
+          <div class="subtitle">Pritam Chakraborty</div>
+        </h5>
+        <i class="fa-solid fa-play playListPlay" data-index="5"></i>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Pritam Chakraborty</h1>
+    <p>
+      Pritam Chakraborty (born 14 June 1971), is a National Award-winning Indian composer,
+      instrumentalist, guitarist, music producer and singer from Kolkata, India.
+    </p>
+
+    <footer>
+      <div class="music_bar">
+        <div class="start-end">
+          <span id="current-start">0:00</span>
+          <span id="current-end">0:00</span>
+        </div>
+        <div class="bar">
+          <input type="range" id="seek" min="0" max="100" value="0">
+          <div class="bar2" id="bar2"></div>
+          <div class="dot" id="dot"></div>
+        </div>
+      </div>
+
+      <div class="item icon">
+        <i class="fa-solid fa-backward-step" id="prev"></i>
+        <i class="fa-solid fa-play" id="masterPlay"></i>
+        <i class="fa-solid fa-forward-step" id="next"></i>
+      </div>
+
+      <!-- <div class="vol">
+        <i class="fa-solid fa-volume-high" id="vol-icon"></i>
+        <input type="range" min="0" max="100" id="vol" value="100">
+        <div class="vol-bar" id="vol-bar"></div>
+        <div id="vol-dot" id="vol-dot"></div>
+      </div> -->
+
+      <div class="vol">
+        <i class="fa-solid fa-volume-high" id="vol-icon"></i>
+        <div class="vol-track">
+        <div class="vol-bar" id="vol-bar"></div>
+        <div class="vol-dot" id="vol-dot"></div>
+        <input type="range" min="0" max="100" id="vol" value="100" />
+        </div>
+    </div>
+
+    </footer>
+  </div>
+
+  <audio id="audioPlayer" src=""></audio>
+  <script src="../../../script.js"></script>
+
+</body>
+</html>
